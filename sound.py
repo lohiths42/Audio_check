@@ -15,7 +15,7 @@ for i in frequency:
 
     # The following two lines are responsible for generating a particular frequency
     print("Playing the frequency: "+str(i))
-    winsound.Beep(frequency, duration)
+    winsound.Beep(i, duration)
 
     # We are taking the user response as input here and if the user presses y or Y, we update the score
     # varibale by 1.
