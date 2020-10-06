@@ -1,7 +1,8 @@
 import os
+import winsound
 import time
 
-duration = 1
+duration = 500
 
 #the scoring variable is responsible for keeping track of the score.
 score = 0
@@ -14,7 +15,7 @@ for i in frequency:
 
     # The following two lines are responsible for generating a particular frequency
     print("Playing the frequency: "+str(i))
-    os.system('play --no-show-progress --null --channels 1 synth %s sine %f' % (duration, i))
+    winsound.Beep(frequency, duration)
 
     # We are taking the user response as input here and if the user presses y or Y, we update the score
     # varibale by 1.
